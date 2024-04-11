@@ -16,3 +16,8 @@ body {
   width: 100%;
   object-fit: cover;
 }
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
