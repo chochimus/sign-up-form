@@ -1,36 +1,121 @@
 @font-face {
   font-family: Norse-Bold;
   src: url(Norse-Bold.otf);
-} 
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --form-text: rgb(60, 72, 80);
+}
 body {
-  height:100vh;
+  min-height:100vh;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   display: flex;
-  overflow-y: hidden;
+  justify-content: flex-start
 }
-.image-container {
+.image-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   flex: 0 0 auto;
-  height: 100vh;
-  max-width: 40%;
+  width: 38%;
+  background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  color: white;
 }
-.background-image {
-  height: 100vh;
+.icon-container {
+  flex: 0 1 auto;
+  font-family: Norse-Bold;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 10rem;
   width: 100%;
-  object-fit: cover;
+  margin-top: 14rem;
+  background-color: rgba(0,0,0,0.5);
+}
+.icon-container img {
+  width: auto;
+  height: 80%;
+}
+.footer-text {
+  margin-bottom: 1rem;
+}
+.footer-text a:link{
+  color: white;  
 }
 .main{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  margin: 0 2rem 0 2rem;
-  max-width: 700px;
+  justify-content: flex-start;
   font-weight: bold;
   font-size: 1.4rem;
   line-height: 1.8rem;
+  margin-top: 8rem;
+}
+.main > div {
+  padding: 2rem;
+}
+.text-block{
+  display: flex;
+  flex-direction: column;
+}
+.form-block{
+  box-shadow: 0 4px 2px -2px gray;
 }
 .service {
+  max-width: 45rem;
+}
+.sign-up-text{
+  margin-bottom: 2rem;
+}
+.motivation-text{
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  color: var(--form-text);
+}
+.italic {
+  font-style: italic;
+}
+.form-container{
+  display: flex;
+  max-width: 40rem;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.form-element {
+  flex: 0 1 40%;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 1rem;
 }
-.other-text{
-  margin-bottom: 4rem;
+.form-element label {
+  font-size: 0.75rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  color: var(--form-text);
+}
+input:focus {
+  outline: none;
+}
+input{
+  height: 1.5rem;
+  border: solid 1px #a3a5a8;
+  border-radius: 0.2rem;
+}
+.form-element input:invalid {
+  border: solid 1px rgb(255, 80, 80);
+  box-shadow: 0px 0px 1px 1px rgb(255, 132, 132);
+}
+.form-element input:focus{
+  border: solid 1px rgb(87, 85, 194);
+  box-shadow: 0px 0px 1px 1px rgb(158, 156, 235);
 }
