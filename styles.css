@@ -132,7 +132,7 @@ button, button:active{
   padding: 0.8rem 2.5rem;
   font-size: 0.8rem;
   font-weight: bold;
-  margin-bottom: 2rem;
+  margin-bottom: 1.6rem;
   box-shadow: 2px 4px 4px 0px rgb(179, 179, 179);
 }
 .create-account:active {
